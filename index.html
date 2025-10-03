@@ -27,4 +27,19 @@
         </div>
     </div>
 </body>
+<script>
+    // Simulación de funcionalidad con JavaScript
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const usuario = document.getElementById('usuario').value;
+        const contrasena = document.getElementById('contrasena').value;
+
+        if (usuario === '' || contrasena === '') {
+            alert('Por favor, rellena todos los campos.');
+            event.preventDefault(); // Detiene el envío del formulario si está vacío
+        } else {
+            console.log("Intentando iniciar sesión para: " + usuario);
+            // Si la validación pasa, el formulario se envía a dashboard.html
+        }
+    });
+</script>
 </html>
